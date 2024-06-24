@@ -15,7 +15,6 @@
         app:cardCornerRadius="24dp"
         app:cardElevation="4dp"
         app:cardBackgroundColor="#8BC34A"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.25"
         app:cardUseCompatPadding="true"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +50,6 @@
         app:cardCornerRadius="24dp"
         app:cardElevation="4dp"
         app:cardBackgroundColor="#FF9800"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.25"
         app:cardUseCompatPadding="true"
         app:layout_constraintStart_toEndOf="@id/reproductorVideo"
@@ -146,6 +144,76 @@
                 android:textColor="@color/black"
                 android:gravity="center_horizontal"
                 android:text="Lector de barras"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/reproducirMusica"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="24dp"
+        app:cardBackgroundColor="#9C27B0"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tomarFoto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_musica" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:text="Reproducir Musica"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/googleMaps"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#009688"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toBottomOf="@id/codigoQr"
+        app:layout_constraintStart_toEndOf="@id/tomarFoto">
+
+        <LinearLayout
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/map1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:text="Google Maps"
                 />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

@@ -1,12 +1,8 @@
 package app.aplicacion.mediaplayermiercoles
 
-import android.app.Activity
 import android.content.Intent
-import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.VideoView
 import app.aplicacion.mediaplayermiercoles.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +16,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(
                 Intent(
                     this,
-                    MainActivity4::class.java
+                    ReproductorVideo::class.java
                 )
             )
         }
@@ -28,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(
                 Intent(
                     this,
-                    MainActivity2::class.java
+                    TomarFoto::class.java
                 ))
         }
 
@@ -36,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(
                 Intent(
                     this,
-                    MainActivity5::class.java
+                    SeleccionarFoto::class.java
                 ))
         }
 
@@ -44,7 +40,22 @@ class MainActivity : AppCompatActivity() {
             startActivity(
                 Intent(
                     this,
-                    MainActivity3::class.java
+                    CodigoQr::class.java
+                ))
+        }
+
+        binding.reproducirMusica.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    ReproductoMusica::class.java
+                ))
+        }
+        binding.googleMaps.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    GoogleMaps::class.java
                 ))
         }
     }
